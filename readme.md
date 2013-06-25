@@ -1,0 +1,1 @@
+<h1>Standard banner</h1>
