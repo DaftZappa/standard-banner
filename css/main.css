@@ -1,4 +1,108 @@
-* {margin: 0;padding: 0; position: absolute;}
-html, body {position: relative;}
-.banner{overflow: hidden;}
-.banner300x250{width: 300px; height: 250px}
+* {
+	margin:0;
+	padding:0;
+	position:absolute
+}
+
+html,body {
+	position:relative;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.banner {
+	overflow:hidden;
+	background-color:#838b8d;
+	background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxyYWRpYWxHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIGN4PSI1MCUiIGN5PSI1MCUiIHI9Ijc1JSIgPgo8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZTUwMDAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KPHN0b3Agb2Zmc2V0PSI5OSUiIHN0b3AtY29sb3I9IiM4NzAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4NzAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgo8L3JhZGlhbEdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+	background-image:-moz-radial-gradient(center center,circle,#e50000 0%,#870000 99%,#870000 100%);
+	background-image:-o-radial-gradient(center center,150px 150px,#e50000 0%,#870000 99%,#870000 100%);
+	background-image:-webkit-radial-gradient(center center,150px 150px,#e50000 0%,#870000 99%,#870000 100%);
+	background-image:radial-gradient(center center,150px 150px,#e50000 0%,#870000 99%,#870000 100%)
+}
+
+.banner300x250 {
+	width:300px;
+	height:250px
+}
+
+.content-container {
+	top:10px;
+	right:150px;
+	bottom:10px;
+	left:10px
+}
+
+.product-container {
+	top:10px;
+	right:110px;
+	bottom:10px;
+	left:160px
+}
+
+.title {
+	position:relative;
+	color:#fff;
+	font-family:"Vodafone ExB";
+	font-size:24px
+}
+
+.description {
+	position:relative;
+	color:#fff;
+	font-family:"Vodafone Rg";
+	font-size:16px
+}
+
+.sticker {
+	-moz-border-radius:52px;
+	-webkit-border-radius:52px;
+	border-radius:52px;
+	-moz-background-clip:padding;
+	-webkit-background-clip:padding-box;
+	background-clip:padding-box;
+	background-color:#00afc9;
+	width:52px;
+	height:52px;
+	color:#fff;
+	font-family:"Vodafone ExB";
+	font-size:13px;
+	text-align: center;
+	display: table;
+}
+
+.sticker div{
+	display: table-cell;
+	vertical-align: bottom;
+	height: 100%;
+}
+
+.button {
+	background:url(../images/button.png);
+	width:62px;
+	height:18px;
+}
+
+.logo {
+	background:url(../images/logo.png);
+	width:45px;
+	height:45px;
+	top: 10px;
+	left: 10px;
+}
+
+.vodafone {
+	background:url(../images/vodafone.png);
+	width:73px;
+	height:13px;
+	bottom: 10px;
+	left: 10px;
+}
+
+.p2u {
+	background:url(../images/p2u.png);
+	width:105px;
+	height:18px;
+	bottom: 5px;
+	left: 10px;
+}
+
