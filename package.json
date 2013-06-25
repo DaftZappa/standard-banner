@@ -1,0 +1,22 @@
+{
+  "name": "BMI-Banner",
+  "version": "0.0.1",
+  "description": "<h1>Standard banner</h1>",
+  "main": "defaults.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nielswijers/standard-banner.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "readme.md",
+  "gitHead": "b7d0ba7b0da53efa8d5a9120017be7ddd2448718",
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-less": "~0.6.1",
+    "grunt-contrib-csslint": "~0.1.2"
+  }
+}
