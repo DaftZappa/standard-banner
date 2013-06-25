@@ -63,7 +63,7 @@ body {
 }
 .sticker div {
   display: table-cell;
-  va: bottom;
+  vertical-align: bottom;
   height: 100%;
 }
 .button {
