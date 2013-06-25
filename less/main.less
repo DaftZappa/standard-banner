@@ -3,27 +3,7 @@
 @import "library/clients/vodafone.less";
 @import "settings.less";
 
-* {
-	margin:0;
-	padding:0;
-	position:absolute
-}
-
-html,body {
-	position:relative;
-	cursor: hand;
-	cursor: pointer;
-}
-
 .banner {
-	overflow:hidden;
-	background-color: #838b8d;
-	.background-image(~"radial-gradient(center center, 150px 150px, #e50000 0%, #870000 99%, #870000 100%)");
-}
-
-.banner300x250 {
-	width:300px;
-	height:250px
 	.banner300x250;
 	.background-gradient-red;
 }
@@ -36,9 +16,6 @@ html,body {
 
 	>div{
 		.size(100%);
-		>div{
-			padding: 3px;
-		}
 	}
 }
 
@@ -54,7 +31,8 @@ html,body {
 	color:#fff;
 	color:@text-color;
 	font-family:"vodafone_exbregular";
-	font-size:24px
+	font-size:24px;
+	margin-bottom: 8px;
 }
 
 .description {
@@ -62,7 +40,8 @@ html,body {
 	color:#fff;
 	color:@text-color;
 	font-family:"vodafone_rgbold";
-	font-size:14px
+	font-size:14px;
+	margin-bottom: 8px;
 }
 
 .sticker {
@@ -75,6 +54,8 @@ html,body {
 	font-size:13px;
 	text-align: center;
 	overflow: hidden;
+	top: 140px;
+	left: 70px;
 	>div{
 		.size(100%);
 		>div{
