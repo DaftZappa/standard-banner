@@ -1,28 +1,12 @@
 @import "library/lesshat.less";
 @import "library/bmi-banner-mixins.less";
 @import "library/clients/vodafone.less";
+@import "settings.less";
 
-* {
-	margin:0;
-	padding:0;
-	position:absolute
-}
-
-html,body {
-	position:relative;
-	cursor: hand;
-	cursor: pointer;
-}
 
 .banner {
-	overflow:hidden;
-	background-color: #838b8d;
-	.background-image(~"radial-gradient(center center, 150px 150px, #e50000 0%, #870000 99%, #870000 100%)");
-}
-
-.banner300x250 {
-	width:300px;
-	height:250px
+	.banner300x250;
+	.background-gradient-red;
 }
 
 .content-container {
@@ -41,14 +25,14 @@ html,body {
 
 .title {
 	position:relative;
-	color:#fff;
+	color:@text-color;
 	font-family:"vodafone_exbregular";
 	font-size:24px
 }
 
 .description {
 	position:relative;
-	color:#fff;
+	color:@text-color;
 	font-family:"vodafone_rgbold";
 	font-size:16px
 }
@@ -65,6 +49,7 @@ html,body {
 	display: table;
 	max-height: 52px;
 	overflow: hidden;
+
 }
 
 .sticker div{
