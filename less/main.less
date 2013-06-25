@@ -29,7 +29,14 @@ html,body {
 	top:10px;
 	right:150px;
 	bottom:10px;
-	left:10px
+	left:10px;
+
+	>div{
+		.size(100%);
+		>div{
+			padding: 3px;
+		}
+	}
 }
 
 .product-container {
@@ -50,7 +57,7 @@ html,body {
 	position:relative;
 	color:#fff;
 	font-family:"vodafone_rgbold";
-	font-size:16px
+	font-size:14px
 }
 
 .sticker {
@@ -62,17 +69,22 @@ html,body {
 	font-family:"vodafone_exbregular";
 	font-size:13px;
 	text-align: center;
-	display: table;
-	max-height: 52px;
 	overflow: hidden;
+	>div{
+		.size(100%);
+		>div{
+			padding: 3px;
+		}
+	}
 }
-
-.sticker div{
+.center-parent{
+	position: relative;
+	display: table;
+}
+.center{
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
-	padding: 10px;
-	height: 100%;
 }
 
 .button {
