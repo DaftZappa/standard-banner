@@ -1,6 +1,7 @@
 @import "library/lesshat.less";
 @import "library/bmi-banner-mixins.less";
 @import "library/clients/vodafone.less";
+@import "settings.less";
 
 * {
 	margin:0;
@@ -23,6 +24,8 @@ html,body {
 .banner300x250 {
 	width:300px;
 	height:250px
+	.banner300x250;
+	.background-gradient-red;
 }
 
 .content-container {
@@ -49,6 +52,7 @@ html,body {
 .title {
 	position:relative;
 	color:#fff;
+	color:@text-color;
 	font-family:"vodafone_exbregular";
 	font-size:24px
 }
@@ -56,6 +60,7 @@ html,body {
 .description {
 	position:relative;
 	color:#fff;
+	color:@text-color;
 	font-family:"vodafone_rgbold";
 	font-size:14px
 }
