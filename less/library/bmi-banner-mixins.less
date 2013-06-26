@@ -27,7 +27,8 @@ html,body {
 	background-image: -webkit-linear-gradient(transparent,transparent),url("@{path-without-extention}.svg");
 	background-image: -moz-linear-gradient(transparent,transparent),url("@{path-without-extention}.svg");
 	background-image: linear-gradient(transparent,transparent),url("@{path-without-extention}.svg");
-	background-size: @w @h;
+  background-size: @w @h;
+	-moz-background-size: @w @h;
 }
 
 
@@ -36,16 +37,15 @@ html,body {
   background-repeat: @repeat;
   background-position: @posx @posy;
 
-  @media print, screen,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (~`"-o-min-device-pixel-ratio: 1.25/1"`),
-    (min--moz-device-pixel-ratio: 1.25),
-    (-moz-min-device-pixel-ratio: 1.25),
-    (-ms-min-device-pixel-ratio: 1.25),
-    (min-device-pixel-ratio: 1.25),
-    (min-resolution: 120dpi),
-    (min-resolution: 1.25dppx) {
+  @media  
+only screen and (-webkit-min-device-pixel-ratio: 2),  
+only screen and ( min--moz-device-pixel-ratio: 2),  
+only screen and ( -o-min-device-pixel-ratio: 2/1),  
+only screen and ( min-device-pixel-ratio: 2),  
+only screen and ( min-resolution: 192dpi),  
+only screen and ( min-resolution: 2dppx) {
       background-size: @width @height;
+      -moz-background-size: @width @height;
       background-image: url('@{file}@2x.@{type}');
       background-position: @posx * 2 @posy * 2;
     }
