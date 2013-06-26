@@ -1,9 +1,10 @@
 // Vodafone specific styles
-@vodafone-primary-color : #ff0000;
+@vodafone-primary-color : #e60000;
 @vodafone-font-family : 'vodafone_exbregular';
 @vodafone-font-family-bold : 'vodafone_rgbold';
 
 .background-gradient-red() {
-	background-color: #838b8d;
+	background-color: @vodafone-primary-color;
+	background-image: url('../images/background.jpg');
 	.background-image(~"radial-gradient(center center, 150px 150px, #e50000 0%, #870000 99%, #870000 100%)");
 }

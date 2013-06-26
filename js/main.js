@@ -1,4 +1,9 @@
 $(function() {
+	BMI.utils.Banner.init(animate);
+});
+
+function animate() {
+
 	var w = $('.banner').width();
 	var h = $('.banner').height();
 	new TimelineMax()
@@ -10,8 +15,6 @@ $(function() {
 		.from('.sticker', 0.5, {left: '+=' + w, top: '+=' + w }, 0.7)
 		.to('.p2u', 0.5, {opacity: 0}, 4)
 		.from('.vodafone', 0.5, {opacity: 0}, 4.5);
+}
 
-	$('.banner').click(function() {
-		window.open('http://www.google.nl', '_blank');
-	});
-});
+

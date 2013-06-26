@@ -27,7 +27,6 @@
 
 .title {
 	position:relative;
-	color:#fff;
 	color:@text-color;
 	font-family:@vodafone-font-family;
 	font-size:24px;
@@ -36,7 +35,6 @@
 
 .description {
 	position:relative;
-	color:#fff;
 	color:@text-color;
 	font-family:@vodafone-font-family-bold;
 	font-size:14px;
@@ -45,7 +43,7 @@
 
 .sticker {
 	.border-radius(52px);
-	background-color: #00afc9;
+	background-color: #feca00;
 	width:52px;
 	height:52px;
 	color:#fff;
@@ -73,13 +71,13 @@
 }
 
 .button {
-	background:url(../images/button.png);
+	.retina-image('../images/button','png', no-repeat, 62px, 18px, 0, 0);
 	width:62px;
 	height:18px;
 }
 
 .logo {
-	background:url(../images/logo.png);
+	.retina-image('../images/logo','png', no-repeat, 45px, 45px, 0, 0);
 	width:45px;
 	height:45px;
 	top: 10px;
@@ -87,7 +85,7 @@
 }
 
 .vodafone {
-	background:url(../images/vodafone.png);
+	.svg-background("../images/vodafone", 73px, 13px);
 	width:73px;
 	height:13px;
 	bottom: 10px;
@@ -95,7 +93,10 @@
 }
 
 .p2u {
-	background:url(../images/p2u.png);
+	//background:url(../images/p2u.png);
+
+	.svg-background("../images/p2u", 105px, 18px);
+
 	width:105px;
 	height:18px;
 	bottom: 5px;

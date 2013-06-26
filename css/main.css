@@ -9,13 +9,15 @@ body {
   position: relative;
 }
 /* Base banner mixins */
+/* Background mixins */
 .banner {
   overflow: hidden;
   cursor: hand;
   cursor: pointer;
   width: 300px;
   height: 250px;
-  background-color: #838b8d;
+  background-color: #e60000;
+  background-image: url('../images/background.jpg');
   background-image: -moz-radial-gradient(center center, circle, #e50000 0%, #870000 99%, #870000 100%);
   background-image: -webkit-radial-gradient(center center, 150px 150px, #e50000 0%, #870000 99%, #870000 100%);
   background-image: -o-radial-gradient(center center, 150px 150px, #e50000 0%, #870000 99%, #870000 100%);
@@ -39,7 +41,6 @@ body {
 }
 .title {
   position: relative;
-  color: #fff;
   color: #ffffff;
   font-family: 'vodafone_exbregular';
   font-size: 24px;
@@ -47,7 +48,6 @@ body {
 }
 .description {
   position: relative;
-  color: #fff;
   color: #ffffff;
   font-family: 'vodafone_rgbold';
   font-size: 14px;
@@ -60,7 +60,7 @@ body {
   -moz-background-clip: padding;
   border-radius: 52px;
   background-clip: padding-box;
-  background-color: #00afc9;
+  background-color: #feca00;
   width: 52px;
   height: 52px;
   color: #fff;
@@ -88,30 +88,74 @@ body {
   vertical-align: middle;
 }
 .button {
-  background: url(../images/button.png);
+  background-image: url('../images/button.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
   width: 62px;
   height: 18px;
 }
+@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+  .button {
+    background-size: 62px 18px;
+    background-image: url('../images/button@2x.png');
+    background-position: 0 0;
+  }
+}
 .logo {
-  background: url(../images/logo.png);
+  background-image: url('../images/logo.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
   width: 45px;
   height: 45px;
   top: 10px;
   left: 10px;
 }
+@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+  .logo {
+    background-size: 45px 45px;
+    background-image: url('../images/logo@2x.png');
+    background-position: 0 0;
+  }
+}
 .vodafone {
-  background: url(../images/vodafone.png);
+  background-image: url('../images/vodafone.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/vodafone.svg");
+  background-image: -moz-linear-gradient(transparent, transparent), url("../images/vodafone.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/vodafone.svg");
+  background-size: 73px 13px;
   width: 73px;
   height: 13px;
   bottom: 10px;
   left: 10px;
 }
+@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+  .vodafone {
+    background-size: 73px 13px;
+    background-image: url('../images/vodafone@2x.png');
+    background-position: 0 0;
+  }
+}
 .p2u {
-  background: url(../images/p2u.png);
+  background-image: url('../images/p2u.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/p2u.svg");
+  background-image: -moz-linear-gradient(transparent, transparent), url("../images/p2u.svg");
+  background-image: linear-gradient(transparent, transparent), url("../images/p2u.svg");
+  background-size: 105px 18px;
   width: 105px;
   height: 18px;
   bottom: 5px;
   left: 10px;
+}
+@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
+  .p2u {
+    background-size: 105px 18px;
+    background-image: url('../images/p2u@2x.png');
+    background-position: 0 0;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   

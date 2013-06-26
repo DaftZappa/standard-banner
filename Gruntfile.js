@@ -23,12 +23,20 @@ module.exports = function(grunt) {
         },
         src: ['css/main.css']
       }
-    }
+    },
+
+      open : {
+        file : {
+          path : 'banner.html'
+        }
+      }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-csslint');
-  grunt.registerTask('default', ['less','watch']);
+  grunt.loadNpmTasks('grunt-open');
+  grunt.registerTask('default', ['less','open','watch']);
 
 };
