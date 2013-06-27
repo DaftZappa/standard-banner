@@ -20,15 +20,17 @@ html,body {
 	cursor: pointer;
 	width: @banner-width;
 	height: @banner-height;
+  display: none;
 }
 
 /* Background mixins */
 .svg-background(@path-without-extention, @w : 105px, @h : 18px) {
 	.retina-image("@{path-without-extention}","png", no-repeat,@w, @h,0,0);
   //background: transparent url("@{path-without-extention}.png") no-repeat;
-	background-image: url("@{path-without-extention}.svg");
-	background-image: url("@{path-without-extention}.svg");
-	background-image: url("@{path-without-extention}.svg");
+  //background-image:  url('image-small.png');
+  .svg & {background-image: none,url('@{path-without-extention}.svg');}
+  .no-svg {background-image: url('@{path-without-extention}.png');}
+
   background-size: @w @h;
 	-moz-background-size: @w @h;
 }

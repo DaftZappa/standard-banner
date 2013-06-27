@@ -4,6 +4,9 @@
   padding: 0;
   position: absolute;
 }
+br {
+  position: relative;
+}
 html,
 body {
   position: relative;
@@ -16,6 +19,7 @@ body {
   cursor: pointer;
   width: 300px;
   height: 250px;
+  display: none;
   background-color: #e60000;
   background-image: url('../images/background.jpg');
   background-image: -moz-radial-gradient(center center, circle, #e50000 0%, #870000 99%, #870000 100%);
@@ -28,10 +32,7 @@ body {
   right: 150px;
   bottom: 10px;
   left: 10px;
-}
-.content-container > div {
-  width: 100%;
-  height: 100%;
+  height: 230px;
 }
 .product-container {
   top: 10px;
@@ -65,18 +66,17 @@ body {
   height: 52px;
   color: #fff;
   font-family: 'vodafone_exbregular';
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
   overflow: hidden;
   top: 140px;
   left: 70px;
 }
 .sticker > div {
-  width: 100%;
-  height: 100%;
-}
-.sticker > div > div {
-  padding: 3px;
+  width: 52px;
+  margin-left: 0px;
+  left: 0;
+  padding: 5px 0;
 }
 .center-parent {
   position: relative;
@@ -123,7 +123,6 @@ body {
   background-image: url('../images/vodafone.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: url("../images/vodafone.svg");
   background-size: 73px 13px;
   -moz-background-size: 73px 13px;
   width: 73px;
@@ -139,11 +138,16 @@ body {
     background-position: 0 0;
   }
 }
+.svg .vodafone {
+  background-image: none, url('../images/vodafone.svg');
+}
+.vodafone .no-svg {
+  background-image: url('../images/vodafone.png');
+}
 .p2u {
   background-image: url('../images/p2u.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: url("../images/p2u.svg");
   background-size: 105px 18px;
   -moz-background-size: 105px 18px;
   width: 105px;
@@ -158,6 +162,12 @@ body {
     background-image: url('../images/p2u@2x.png');
     background-position: 0 0;
   }
+}
+.svg .p2u {
+  background-image: none, url('../images/p2u.svg');
+}
+.p2u .no-svg {
+  background-image: url('../images/p2u.png');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   

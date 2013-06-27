@@ -24,10 +24,18 @@ module.exports = function(grunt) {
         src: ['css/main.css']
       }
     },
+    connect: {
+    server: {
+      options: {
+        port: 9001,
+        base: ''
+      }
+    }
+  },
 
       open : {
         file : {
-          path : 'banner.html'
+          path : 'http://localhost:9001/banner.html'
         }
       }
 
@@ -36,7 +44,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-open');
-  grunt.registerTask('default', ['less','open','watch']);
+  grunt.registerTask('default', ['less','connect','open','watch']);
 
 };

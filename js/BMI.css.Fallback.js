@@ -4,6 +4,7 @@ BMI.css = BMI.css || {};
 
 BMI.css.Fallback = (function (BMI, Modernizr) {
 	var fix = function() {	
+		BMI.css.VerticalAlign.fix();
 		BMI.css.BorderRadiusFallback.fix();
 	}
 	return {

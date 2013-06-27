@@ -11,6 +11,8 @@ BMI.css.BorderRadiusFallback = (function (BMI, Modernizr) {
 			$('['+attributeName+']').each(function() {
 				var path = 'images/'+$(this).attr(attributeName);
 				path += Modernizr.svg ? '.svg': '.png';
+				
+				this.style.backgroundColor ="transparent";	
 				this.style.backgroundImage="url('"+path+"')";	
 			});
 		}

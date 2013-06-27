@@ -4,7 +4,7 @@ BMI.utils = BMI.utils || {};
 
 BMI.utils.Banner = (function (BMI, navigator) {
 	var bannerContainer = ".banner";
-	
+
 	var addEventListeners = function() {
 
 		$('.banner').click(function() {
@@ -12,9 +12,14 @@ BMI.utils.Banner = (function (BMI, navigator) {
 		});
 	}
 
-	var init = function(successCallback) {
+	var init = function(successCallback, addEventsCallback) {
 		BMI.css.Fallback.fix();
-		addEventListeners();
+
+		if(typeof addEventsCallback === 'undefined') {
+			addEventListeners();
+		} else {
+			addEventsCallback.apply(this,[this]);
+		}
 
 		successCallback.apply(this,[this]);
 	}
