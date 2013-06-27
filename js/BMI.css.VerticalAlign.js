@@ -12,7 +12,7 @@ BMI.css.VerticalAlign = (function (BMI, Modernizr) {
 
 	var fix = function() {			
 
-		waitForWebfonts(['vodafone_exbregular'], function() {
+		waitForWebfonts(['vodafone_exbregular','vodafone_rgbold'], function() {
 
 			if(VerticalAlignCantBeDoneWithCSS()) {
 				$('['+attributeName+']').each(function() {
