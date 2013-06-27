@@ -24,13 +24,15 @@ BMI.css.VerticalAlign = (function (BMI, Modernizr) {
 
 					var s = this;
 
-					setTimeout(function() {
-						elementHeight = $(s).height();
-						marginTop = ((totalHeight - elementHeight)/2)+'px';
+					var checkHeightInterval = setInterval(function() {
+						if($(s).height() > 0) {
+							elementHeight = $(s).height();
+							marginTop = ((totalHeight - elementHeight)/2)+'px';
 
-						$(s).css('margin-top', marginTop);
-
-					}, 10);
+							$(s).css('margin-top', marginTop);
+							clearInterval(checkHeightInterval);
+						}
+					}, 5);
 
 				});
 			}
