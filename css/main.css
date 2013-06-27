@@ -43,14 +43,14 @@ body {
 .title {
   position: relative;
   color: #ffffff;
-  font-family: 'vodafone_exbregular';
+  font-family: 'vodafone_exbregular', 'Arial', serif;
   font-size: 24px;
   margin-bottom: 8px;
 }
 .description {
   position: relative;
   color: #ffffff;
-  font-family: 'vodafone_rgbold';
+  font-family: 'vodafone_rgbold', 'Arial', serif;
   font-size: 14px;
   margin-bottom: 8px;
 }
@@ -65,7 +65,7 @@ body {
   width: 52px;
   height: 52px;
   color: #fff;
-  font-family: 'vodafone_exbregular';
+  font-family: 'vodafone_exbregular', 'Arial', serif;
   font-size: 12px;
   text-align: center;
   overflow: hidden;
