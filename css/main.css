@@ -97,6 +97,7 @@ body {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .button {
     background-size: 62px 18px;
+    -moz-background-size: 62px 18px;
     background-image: url('../images/button@2x.png');
     background-position: 0 0;
   }
@@ -113,6 +114,7 @@ body {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .logo {
     background-size: 45px 45px;
+    -moz-background-size: 45px 45px;
     background-image: url('../images/logo@2x.png');
     background-position: 0 0;
   }
@@ -121,10 +123,9 @@ body {
   background-image: url('../images/vodafone.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/vodafone.svg");
-  background-image: -moz-linear-gradient(transparent, transparent), url("../images/vodafone.svg");
-  background-image: linear-gradient(transparent, transparent), url("../images/vodafone.svg");
+  background-image: url("../images/vodafone.svg");
   background-size: 73px 13px;
+  -moz-background-size: 73px 13px;
   width: 73px;
   height: 13px;
   bottom: 10px;
@@ -133,6 +134,7 @@ body {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .vodafone {
     background-size: 73px 13px;
+    -moz-background-size: 73px 13px;
     background-image: url('../images/vodafone@2x.png');
     background-position: 0 0;
   }
@@ -141,10 +143,9 @@ body {
   background-image: url('../images/p2u.png');
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-image: -webkit-linear-gradient(transparent, transparent), url("../images/p2u.svg");
-  background-image: -moz-linear-gradient(transparent, transparent), url("../images/p2u.svg");
-  background-image: linear-gradient(transparent, transparent), url("../images/p2u.svg");
+  background-image: url("../images/p2u.svg");
   background-size: 105px 18px;
+  -moz-background-size: 105px 18px;
   width: 105px;
   height: 18px;
   bottom: 5px;
@@ -153,6 +154,7 @@ body {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .p2u {
     background-size: 105px 18px;
+    -moz-background-size: 105px 18px;
     background-image: url('../images/p2u@2x.png');
     background-position: 0 0;
   }

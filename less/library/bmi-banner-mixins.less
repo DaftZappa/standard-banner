@@ -26,9 +26,9 @@ html,body {
 .svg-background(@path-without-extention, @w : 105px, @h : 18px) {
 	.retina-image("@{path-without-extention}","png", no-repeat,@w, @h,0,0);
   //background: transparent url("@{path-without-extention}.png") no-repeat;
-	background-image: -webkit-linear-gradient(transparent,transparent),url("@{path-without-extention}.svg");
-	background-image: -moz-linear-gradient(transparent,transparent),url("@{path-without-extention}.svg");
-	background-image: linear-gradient(transparent,transparent),url("@{path-without-extention}.svg");
+	background-image: url("@{path-without-extention}.svg");
+	background-image: url("@{path-without-extention}.svg");
+	background-image: url("@{path-without-extention}.svg");
   background-size: @w @h;
 	-moz-background-size: @w @h;
 }
