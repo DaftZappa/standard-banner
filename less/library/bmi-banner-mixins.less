@@ -1,10 +1,12 @@
 @import "../settings.less";
 
 /* HTML Styling */
+
 * {
 	margin:0;
 	padding:0;
-	position:absolute
+	position:absolute;
+   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; 
 }
 
 br {position:relative;}
@@ -24,8 +26,8 @@ html,body {
 }
 
 /* Background mixins */
-.svg-background(@path-without-extention, @w : 105px, @h : 18px) {
-	.retina-image("@{path-without-extention}","png", no-repeat,@w, @h,0,0);
+.svg-background(@path-without-extention, @w : 105px, @h : 18px, @fillsContainer: false) {
+	.retina-image("@{path-without-extention}","png", no-repeat,@w, @h,0,0, @fillsContainer);
   //background: transparent url("@{path-without-extention}.png") no-repeat;
   //background-image:  url('image-small.png');
   .svg & {background-image: none,url('@{path-without-extention}.svg');}
@@ -35,24 +37,30 @@ html,body {
 	-moz-background-size: @w @h;
 }
 
-
-.retina-image(@file, @type, @repeat, @width, @height, @posx : 0, @posy : 0) {
+.retina-image(@file, @type, @repeat, @width, @height, @posx : 0, @posy : 0, @fillsContainer : false) when (@fillsContainer = false) {
   background-image: url('@{file}.@{type}');
   background-repeat: @repeat;
   background-position: @posx @posy;
 
   @media  
-only screen and (-webkit-min-device-pixel-ratio: 2),  
-only screen and ( min--moz-device-pixel-ratio: 2),  
-only screen and ( -o-min-device-pixel-ratio: 2/1),  
-only screen and ( min-device-pixel-ratio: 2),  
-only screen and ( min-resolution: 192dpi),  
-only screen and ( min-resolution: 2dppx) {
-      background-size: @width @height;
-      -moz-background-size: @width @height;
-      background-image: url('@{file}@2x.@{type}');
-      background-position: @posx * 2 @posy * 2;
+      only screen and (-webkit-min-device-pixel-ratio: 2),  
+      only screen and ( min--moz-device-pixel-ratio: 2),  
+      only screen and ( -o-min-device-pixel-ratio: 2/1),  
+      only screen and ( min-device-pixel-ratio: 2),  
+      only screen and ( min-resolution: 192dpi),  
+      only screen and ( min-resolution: 2dppx) {
+        background-size: @width @height;
+        -moz-background-size: @width @height;
+        background-image: url('@{file}@2x.@{type}');
+        background-position: @posx * 2 @posy * 2;
     }
 }
+
+.retina-image(@file, @type, @repeat, @width, @height, @posx : 0, @posy : 0, @fillsContainer : false)  when (@fillsContainer = true) {
+  width: @width;
+  height: @height;
+  .retina-image(@file, @type, @repeat, @width, @height, @posx, @posy, false)
+}
+
 
 

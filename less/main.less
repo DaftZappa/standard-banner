@@ -44,8 +44,7 @@
 .sticker {
 	.border-radius(52px);
 	background-color: #feca00;
-	width:52px;
-	height:52px;
+	.size(52px);
 	color:#fff;
 	font-family:@vodafone-font-family;
 	font-size:12px;
@@ -57,15 +56,13 @@
 		.size(100%);
 		margin-left: 0px;
 		left: 0;
-		
-			
-		
 	}
 }
 .center-parent{
 	position: relative;
 	display: table;
 }
+
 .center{
 	position: relative;
 	display: table-cell;
@@ -73,34 +70,24 @@
 }
 
 .button {
-	.retina-image('../images/button','png', no-repeat, 62px, 18px, 0, 0);
-	width:62px;
-	height:18px;
+	.retina-image('../images/button','png', no-repeat, 62px, 18px, 0, 0, true);
 }
 
 .logo {
-	.retina-image('../images/logo','png', no-repeat, 45px, 45px, 0, 0);
-	width:45px;
-	height:45px;
+	.retina-image('../images/logo','png', no-repeat, 45px, 45px, 0, 0, true);
 	top: 10px;
 	left: 10px;
 }
 
 .vodafone {
-	.svg-background("../images/vodafone", 73px, 13px);
-	width:73px;
-	height:13px;
+	.svg-background("../images/vodafone", 73px, 13px, true);
 	bottom: 10px;
 	left: 10px;
 }
 
 .p2u {
-	.svg-background("../images/p2u", 105px, 18px);
-	width:105px;
-	height:18px;
+	.svg-background("../images/p2u", 105px, 18px, true);
 	bottom: 5px;
 	left: 10px;
 }
 
-
-@import "retina.less";
